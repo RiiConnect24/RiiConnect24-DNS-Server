@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  windows:
+  Windows:
     runs-on: windows-latest
 
     steps:
@@ -19,3 +19,38 @@ jobs:
       with:
         name: windows-latest
         path: dist
+        
+  Linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
+    - name: Publish Build Artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: ubuntu-latest
+        path: dist
+        
+  macOS:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
+    - name: Publish Build Artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: macOS-latest
+        path: dist
+
