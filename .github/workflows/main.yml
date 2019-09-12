@@ -4,15 +4,11 @@ on: [push]
 
 jobs:
   build:
-    strategy:
-      matrix:
-        python-version: '3.7'
-        imageName: 'windows-latest'
-    runs-on: ${{ matrix.imageName }}
-    
+    runs-on: windows-latest
+
     steps:
     - uses: actions/checkout@v1
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python 3.7
       uses: actions/setup-python@v1
     - name: Install requirements with PIP
       run: pip install dnslib requests pyinstaller
@@ -21,5 +17,5 @@ jobs:
     - name: Publish Build Artifacts
       uses: actions/upload-artifact@master
       with:
-        name: ${{ matrix.imageName }}
+        name: windows-latest
         path: dist
