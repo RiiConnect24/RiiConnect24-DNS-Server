@@ -1,0 +1,38 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        Windows Python 3.5:
+          python-version: '3.5'
+          imageName: 'windows-latest'
+        Windows Python 3.6:
+          python-version: '3.6'
+          imageName: 'windows-latest'
+        Windows Python 3.7:
+          python-version: '3.7'
+          imageName: 'windows-latest'
+        Linux Python 3.7:
+          python-version: '3.7'
+          imageName: 'ubuntu-latest'
+        macOS Python 3.7:
+          python-version: '3.7'
+          imageName: 'macOS-latest'
+    runs-on: ${{ matrix.imageName }}
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
+    - name: Publish Build Artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ matrix.imageName }}
+        path: dist
