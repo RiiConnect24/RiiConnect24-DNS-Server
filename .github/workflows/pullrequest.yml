@@ -1,0 +1,40 @@
+name: Pull Requests CI
+
+on: [pull_request]
+
+jobs:
+  Windows:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
+        
+  Linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
+        
+  macOS:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server_v1.0.spec
