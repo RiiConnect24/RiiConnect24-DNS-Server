@@ -1,6 +1,8 @@
-# RiiConnect24 DNS Server
+RiiConnect24 DNS Server
+===
+[![Actions Status](https://github.com/RiiConnect24/DNS-Server/workflows/CI/badge.svg)](https://github.com/RiiConnect24/DNS-Server/actions)
 
-This DNS Server will run locally on your computer and will allow your Wii to connect to RiiConnect24 servers even if your ISP blocks connections to our DNS Server.
+This DNS Server will run locally on your computer and allow your Wii to connect to RiiConnect24 servers even if your ISP blocks connections to our DNS Server.
 
 ## Setup
 
@@ -11,9 +13,11 @@ You will only need to change DNS Settings in your Wii.
 
 First, make sure that your Wii is connected to the same network as your computer is.
 
+If you use Pi-hole, please see [Setting up Pi-hole](#Setting-up-Pi-hole)
+
 # Running on Windows:
 
-Run the .exe provided [on this site](https://github.com/RiiConnect24/RiiConnect24-DNS-Server/releases). If your antivirus notifies you about the .exe file, allow it and run it. If it doesn't work, you should also allow communication for this this .exe in your firewall settings.
+Run the .exe provided [on the releases page](https://github.com/RiiConnect24/RiiConnect24-DNS-Server/releases). If your antivirus notifies you about the .exe file, allow it and run it. If it doesn't work, you should also allow communication for this this .exe in your firewall settings.
 
 # Running on Linux/macOS:
 
@@ -23,7 +27,9 @@ You will need to install Python 3 and run these commands in the Terminal.
 
 To run it, simply type in:
 
-> sudo <name of your python binary> RiiConnect24-DNS-Server.py
+> sudo python3 RiiConnect24-DNS-Server.py
+
+Replace `python3` with the name/path to your Python binary if necessary
 
 # How to use it?
 
@@ -31,7 +37,7 @@ After starting the program, it will download the current list of the DNS Address
 
 On screen, you will see the IP Address assigned to your computer by the DHCP Server on your NAT (router).
 
-If your Wii will be connected to the same network as your Wii, it will be able to connect to your PC.
+If your Wii is connected to the same network as your PC, it will be able to connect to the server on your PC.
 
 <p align="center">
   <img src="https://i.imgur.com/oageZQ3.jpg">
@@ -41,11 +47,29 @@ If your Wii will be connected to the same network as your Wii, it will be able t
 
 # Compiling on Windows
 
-To compile this app on Windows, you will need to run these two commands:
+To compile this app on Windows, you will need to run these two commands (Important: Pyinstaller currently fails to build with Python 3.8, use Python 3.7.5):
 >pip install dnslib requests pyinstaller
 
 Once it's done installing, run:
 >pyinstaller RiiConnect24-DNS-Server_v1.0.spec
 
+| Tip: You may need to edit RiiConnect24-DNS-Server_v1.0.spec so the compiling process works on your computer.
 
-| Tip: You may need to edit RiiConnect24-DNS-Server_v1.0.spec so compiling process works on your computer.
+# Setting up Pi-hole
+
+On the server running Pi-hole, run the following commands:
+
+```bash
+git clone https://github.com/riiconnect24/dns-server
+cd dns-server
+sudo mv ./dns_zones-hosts.txt /path/to/somewhere/
+sudo touch /etc/dnsmasq.d/customHosts.conf
+echo "addn-hosts=/path/to/somewhere/dns_zones-hosts.txt" | sudo tee /etc/dnsmasq.d/customHosts.conf
+cd ..
+rm -rf dns-server/
+sudo systemctl restart pihole-FTL.service
+```
+Substitute any directory of your choice into `/path/to/somwehere/` which is accessible by the root user. An example of this can be `/home/pi/`.
+
+# Need more help?
+You can talk to us over on the [RiiConnect24 Discord server](https://discord.gg/b4Y7jfD), where people can try and help you out!
