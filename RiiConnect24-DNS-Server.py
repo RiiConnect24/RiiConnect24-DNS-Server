@@ -29,7 +29,7 @@ def get_platform():
 
     return platforms[sys.platform]
 
-RIICONNECT24DNSSERVER_VERSION = "1.0"
+RIICONNECT24DNSSERVER_VERSION = "1.1"
 
 def get_ip():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -54,7 +54,7 @@ print("+===============================+\n")
 
 print("Hello! This server will allow you to connect to RiiConnect24 when your Internet Service Provider does not work with custom DNS.")
 
-print("This tool will help you avoid error 107304 in Forecast/News Channel.\n")
+print("This tool will help you avoid error 107304 in the Forecast/News Channel. When you use the DNS on your Wii or with this app, it also enhances the use of services such as Wiimmfi. This tool can also be used as a DNS server for Nintendo DS games.\n")
 
 
 print("#### How To Use ####\n")
@@ -86,17 +86,17 @@ TYPE_LOOKUP = {
 
 # Can't seem to turn off DNSLogger with a None type so let's just null it out with a dummy function
 
-class SudomemoDNSLogger(object):
+class RiiConnect24DNSLogger(object):
     def log_recv(self, handler, data):
         pass
     def log_send(self, handler, data):
         pass
     def log_request(self, handler, request):
-        print("[INFO] Received DNS request from Wii at " + handler.client_address[0])
+        print("[DNS] {" + datetime.now().strftime('%H:%M:%S') + "} Received: DNS Request from: " + handler.client_address[0])
     def log_reply(self, handler, reply):
-        print("[INFO] Sent response to Wii at " + handler.client_address[0])
+        print("[DNS] {" + datetime.now().strftime('%H:%M:%S') + "} Sent    : DNS Response to:  " + handler.client_address[0])
     def log_error(self, handler, e):
-        logger.error("[INFO] Invalid DNS request from " + handler.client_address[0])
+        logger.error("[INFO] {" + datetime.now().strftime('%H:%M:%S') + "} Invalid DNS request from " + handler.client_address[0])
     def log_truncated(self, handler, reply):
         pass
     def log_data(self, dnsobj):
@@ -189,6 +189,7 @@ class Resolver:
                 rr and reply.add_answer(rr)
         else:
             # no direct zone so look for an SOA record for a higher level zone
+            found = False
             for zone_label, zone_records in self.zones.items():
                 if request.q.qname.matchSuffix(zone_label):
                     try:
@@ -197,13 +198,16 @@ class Resolver:
                         continue
                     else:
                         reply.add_answer(soa_record.as_rr(zone_label))
+                        found = True
                         break
+            if not found:
+                reply.add_answer(RR(str(request.q.qname),QTYPE.A,rdata=A(socket.gethostbyname_ex(str(request.q.qname))[2][0]),ttl=60))
 
         return reply
 
 
 resolver = Resolver()
-dnsLogger = SudomemoDNSLogger()
+dnsLogger = RiiConnect24DNSLogger()
 
 print("[INFO] Detected operating system:", get_platform());
 
@@ -216,7 +220,7 @@ elif get_platform() == 'OS X':
   print("[INFO] If you aren't seeing any requests, check that this is the case first with lsof -i:53 (requires lsof)")
   print("[INFO] To run as root, prefix the command with 'sudo'")
 elif get_platform() == 'Windows':
-  print("[INFO] Please note: If you see a notification about firewall, allow the application to work. If you're using 3rd party  firewall on your computer - you may want to add this program to your firewall and allow traffic.")
+  print("[INFO] Please note: If you see a notification about firewall, allow the application to work. If you're using 3rd party  firewall on your computer - you may want to - this program to your firewall and allow traffic.")
 
 try:
   servers = [

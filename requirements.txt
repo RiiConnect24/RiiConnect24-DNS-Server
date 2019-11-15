@@ -1,0 +1,2 @@
+dnslib
+requests

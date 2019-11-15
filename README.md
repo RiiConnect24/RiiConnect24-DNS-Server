@@ -13,7 +13,7 @@ You will only need to change DNS Settings in your Wii.
 
 First, make sure that your Wii is connected to the same network as your computer is.
 
-If you use Pi-hole, please see [Setting up Pi-hole](#Setting-up-Pi-hole)
+**If you use Pi-hole, please see [Setting up Pi-hole](#Setting-up-Pi-hole)**
 
 # Running on Windows:
 
@@ -51,7 +51,7 @@ To compile this app on Windows, you will need to run these two commands (Importa
 >pip install dnslib requests pyinstaller
 
 Once it's done installing, run:
->pyinstaller RiiConnect24-DNS-Server_v1.0.spec
+>pyinstaller RiiConnect24-DNS-Server.spec
 
 | Tip: You may need to edit RiiConnect24-DNS-Server_v1.0.spec so the compiling process works on your computer.
 

@@ -1,0 +1,27 @@
+name: CI
+
+on: [push]
+
+jobs:
+  Build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macOS-latest]
+
+    steps:
+    - name: Obtain latest version of the repository
+      uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.7.5'
+    - name: Install requirements with PIP
+      run: pip install dnslib requests pyinstaller
+    - name: Build DNS-Server
+      run: pyinstaller --onefile RiiConnect24-DNS-Server.spec
+    - name: Publish Build Artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ matrix.os }}
+        path: dist
