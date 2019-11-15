@@ -69,7 +69,7 @@ cd ..
 rm -rf dns-server/
 sudo systemctl restart pihole-FTL.service
 ```
-Substitute any directory of your choice into `/path/to/somwehere/` which is accessible by the root user. An example of this can be `/home/pi/`.
+Substitute any directory of your choice into `/path/to/somewhere/` which is accessible by the root user. An example of this can be `/home/pi/`.
 
 # Need more help?
 You can talk to us over on the [RiiConnect24 Discord server](https://discord.gg/b4Y7jfD), where people can try and help you out!
