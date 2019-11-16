@@ -1,6 +1,5 @@
-RiiConnect24 DNS Server
+RiiConnect24 DNS Server [![Actions Status](https://github.com/RiiConnect24/DNS-Server/workflows/Build/badge.svg)](https://github.com/RiiConnect24/DNS-Server/actions)
 ===
-[![Actions Status](https://github.com/RiiConnect24/DNS-Server/workflows/CI/badge.svg)](https://github.com/RiiConnect24/DNS-Server/actions)
 
 This DNS Server will run locally on your computer and allow your Wii to connect to RiiConnect24 servers even if your ISP blocks connections to our DNS Server.
 
