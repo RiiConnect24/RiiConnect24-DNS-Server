@@ -15,16 +15,16 @@ strategy:
       python.version: '3.6'
       imageName: 'windows-latest'
     Windows Python 3.7:
-      python.version: '3.7'
+      python.version: '3.7.6'
       imageName: 'windows-latest'
     Windows Python 3.8:
-      python.version: '3.8'
+      python.version: '3.8.2'
       imageName: 'windows-latest'
     Linux Python 3.8:
-      python.version: '3.8'
+      python.version: '3.8.2'
       imageName: 'ubuntu-latest'
     macOS Python 3.8:
-      python.version: '3.8'
+      python.version: '3.8.2'
       imageName: 'macOS-latest'
 
 pool:
