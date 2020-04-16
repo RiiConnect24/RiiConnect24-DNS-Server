@@ -64,6 +64,16 @@
       "name":"gamespy.com",
       "value":"95.217.77.151 "
    },
+   {
+      "type":"a",
+      "name":"mariokartds.available.gs.nintendowifi.net",
+      "value":"95.217.77.151 "
+   },
+   {
+      "type":"a",
+      "name":"gpcm.gs.nintendowifi.net",
+      "value":"95.217.77.151 "
+   },
    {  
       "type":"a",
       "name":"nas.nintendowifi.net",

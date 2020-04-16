@@ -14,6 +14,8 @@
 164.132.44.106 weather.wapp.wii.com
 164.132.44.106 wc24.wii.com
 95.217.77.151 gamespy.com
+95.217.77.151 mariokartds.available.gs.nintendowifi.net
+95.217.77.151 gpcm.gs.nintendowifi.net
 178.62.43.212 nas.nintendowifi.net
 165.227.235.155 dls1.wiimmfi.de
 165.227.235.155 dls2.wiimmfi.de
