@@ -17,11 +17,14 @@ strategy:
     Windows Python 3.7:
       python.version: '3.7'
       imageName: 'windows-latest'
-    Linux Python 3.7:
-      python.version: '3.7'
+    Windows Python 3.8:
+      python.version: '3.8'
+      imageName: 'windows-latest'
+    Linux Python 3.8:
+      python.version: '3.8'
       imageName: 'ubuntu-latest'
-    macOS Python 3.7:
-      python.version: '3.7'
+    macOS Python 3.8:
+      python.version: '3.8'
       imageName: 'macOS-latest'
 
 pool:
