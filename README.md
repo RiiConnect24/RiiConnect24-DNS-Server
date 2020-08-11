@@ -59,16 +59,11 @@ Once it's done installing, run:
 On the server running Pi-hole, run the following commands:
 
 ```bash
-git clone https://github.com/riiconnect24/dns-server
-cd dns-server
-sudo mv ./dns_zones-hosts.txt /path/to/somewhere/
-sudo touch /etc/dnsmasq.d/customHosts.conf
-echo "addn-hosts=/path/to/somewhere/dns_zones-hosts.txt" | sudo tee /etc/dnsmasq.d/customHosts.conf
-cd ..
-rm -rf dns-server/
-sudo systemctl restart pihole-FTL.service
+cd ~
+wget https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt
+cat dns_zones-hosts.txt | sudo tee /etc/pihole/custom.list --append
 ```
-Substitute any directory of your choice into `/path/to/somewhere/` which is accessible by the root user. An example of this can be `/home/pi/`.
+RiiConnect24 domains will be listed on Pi-hole webpage menu under "Local DNS Records".
 
 # Need more help?
 You can talk to us over on the [RiiConnect24 Discord server](https://discord.gg/b4Y7jfD), where people can try and help you out!
