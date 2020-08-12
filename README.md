@@ -59,9 +59,7 @@ Once it's done installing, run:
 On the server running Pi-hole, run the following commands:
 
 ```bash
-cd ~
-wget https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt
-cat dns_zones-hosts.txt | sudo tee /etc/pihole/custom.list --append
+curl https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt >> /etc/pihole/custom.list
 ```
 RiiConnect24 domains will be listed on Pi-hole webpage menu under "Local DNS Records".
 
