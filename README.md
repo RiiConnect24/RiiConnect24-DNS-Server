@@ -56,7 +56,7 @@ Once it's done installing, run:
 
 # Setting up Pi-hole
 
-On the server running Pi-hole, run the following commands:
+On the server running Pi-hole, run the following command:
 
 ```bash
 curl https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt >> /etc/pihole/custom.list
