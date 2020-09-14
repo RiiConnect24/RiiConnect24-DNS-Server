@@ -1,212 +1,237 @@
-[  
-   {  
-      "type":"a",
-      "name":"cfh.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"ente.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"entj.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"entu.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"miicontest.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"miicontestp.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"news.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"nwcs.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"vt.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"wus.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"weather.wapp.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"wc24.wii.com",
-      "value":"164.132.44.106 "
-   },
-   {  
-      "type":"a",
-      "name":"gamespy.com",
-      "value":"95.217.77.151 "
+[
+   {
+      "type": "a",
+      "name": "cfh.wapp.wii.com",
+      "value": "164.132.44.106"
    },
    {
-      "type":"a",
-      "name":"mariokartds.available.gs.nintendowifi.net",
-      "value":"95.217.77.151 "
+      "type": "a",
+      "name": "ente.wapp.wii.com",
+      "value": "164.132.44.106"
    },
    {
-      "type":"a",
-      "name":"gpcm.gs.nintendowifi.net",
-      "value":"95.217.77.151 "
-   },
-   {  
-      "type":"a",
-      "name":"nas.nintendowifi.net",
-      "value":"178.62.43.212 "
-   },
-   {  
-      "type":"a",
-      "name":"dls1.wiimmfi.de",
-      "value":"195.201.236.139 "
-   },
-   {  
-      "type":"a",
-      "name":"dls1.ilostmymind.xyz",
-      "value":"195.201.236.139 "
-   },
-   {  
-      "type":"a",
-      "name":"naswii.dev.wiimmfi.de",
-      "value":"95.217.77.151 "
-   },
-   {  
-      "type":"a",
-      "name":"peerchat.gs.nintendowifi.net",
-      "value":"195.201.236.139 "
-   },
-   {  
-      "type":"a",
-      "name":"pkgdsprod.nintendo.co.jp",
-      "value":"191.236.98.208"
-   },
-   {  
-      "type":"a",
-      "name":"pkvldtprod.nintendo.co.jp",
-      "value":"178.62.43.212"
-   },
-   {  
-      "type":"a",
-      "name":"gamestats.gs.nintendowifi.net",
-      "value":"195.201.236.139 "
-   },
-   {  
-      "type":"a",
-      "name":"gamestats2.gs.nintendowifi.net",
-      "value":"195.201.236.139 "
-   },
-   {  
-      "type":"a",
-      "name":"conntest.nintendowifi.net",
-      "value":"69.25.139.140"
-   },
-   {  
-      "type":"a",
-      "name":"gs.nintendowifi.net",
-      "value":"95.217.77.151"
-   },
-   {  
-      "type":"a",
-      "name":"mariokartwii.race.gs.wiimmfi.de",
-      "value":"164.132.44.106"
+      "type": "a",
+      "name": "entj.wapp.wii.com",
+      "value": "164.132.44.106"
    },
    {
-      "type":"a",
-      "name":"master.gs.nintendowifi.net",
-      "value":"95.217.77.151"
+      "type": "a",
+      "name": "entu.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg1.gs.nintendowifi.net",
-      "value":"95.217.77.151"
+   {
+      "type": "a",
+      "name": "miicontest.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg2.gs.nintendowifi.net",
-      "value":"94.130.8.215"
+   {
+      "type": "a",
+      "name": "miicontestp.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg3.gs.nintendowifi.net",
-      "value":"94.130.48.222"
+   {
+      "type": "a",
+      "name": "news.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg4.gs.nintendowifi.net",
-      "value":"95.217.77.151"
+   {
+      "type": "a",
+      "name": "nwcs.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg5.gs.nintendowifi.net",
-      "value":"95.217.77.151"
+   {
+      "type": "a",
+      "name": "vt.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"natneg6.gs.nintendowifi.net",
-      "value":"95.217.77.151"
+   {
+      "type": "a",
+      "name": "wus.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"rs.nintendo.com",
-      "value":"164.132.44.106"
+   {
+      "type": "a",
+      "name": "weather.wapp.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"ms.nintendo-europe.com",
-      "value":"164.132.44.106"
+   {
+      "type": "a",
+      "name": "wc24.wii.com",
+      "value": "164.132.44.106"
    },
-   {  
-      "type":"a",
-      "name":"wiirecommend.nintendo.com.au",
-      "value":"164.132.44.106"
+   {
+      "type": "a",
+      "name": "gamespy.com",
+      "value": "95.217.77.151"
    },
-   {  
-      "type":"a",
-      "name":"wii.nintendo.co.jp",
-      "value":"164.132.44.106"
+   {
+      "type": "a",
+      "name": "mariokartds.available.gs.nintendowifi.net",
+      "value": "95.217.77.151"
    },
-   {  
-      "type":"a",
-      "name":"gdata.youtube.com",
-      "value":"92.222.69.160"
+   {
+      "type": "a",
+      "name": "gpcm.gs.nintendowifi.net",
+      "value": "95.217.77.151"
    },
-   {  
-      "type":"a",
-      "name":"flipnote.hatena.com",
-      "value":"178.62.43.212"
+   {
+      "type": "a",
+      "name": "nas.nintendowifi.net",
+      "value": "178.62.43.212"
    },
-   {  
-      "type":"a",
-      "name":"syscheck.softwii.de",
-      "value":"195.201.236.139"
+   {
+      "type": "a",
+      "name": "dls1.wiimmfi.de",
+      "value": "195.201.236.139"
    },
-   {  
-      "type":"a",
-      "name":"syscheck.rc24.xyz",
-      "value":"195.201.236.139"
+   {
+      "type": "a",
+      "name": "dls1.ilostmymind.xyz",
+      "value": "195.201.236.139"
+   },
+   {
+      "type": "a",
+      "name": "dls2.pokeacer.tk",
+      "value": "195.20.43.101"
+   }
+   {
+      "type": "a",
+      "name": "naswii.dev.wiimmfi.de",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "peerchat.gs.nintendowifi.net",
+      "value": "195.201.236.139"
+   },
+   {
+      "type": "a",
+      "name": "pkgdsprod.nintendo.co.jp",
+      "value": "191.236.98.208"
+   },
+   {
+      "type": "a",
+      "name": "pkvldtprod.nintendo.co.jp",
+      "value": "191.236.98.208"
+   },
+   {
+      "type": "a",
+      "name": "gamestats.gs.nintendowifi.net",
+      "value": "195.201.236.139"
+   },
+   {
+      "type": "a",
+      "name": "gamestats2.gs.nintendowifi.net",
+      "value": "195.201.236.139"
+   },
+   {
+      "type": "a",
+      "name": "conntest.nintendowifi.net",
+      "value": "69.25.139.140"
+   },
+   {
+      "type": "a",
+      "name": "gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "mariokartwii.race.gs.wiimmfi.de",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "master.gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "natneg1.gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "natneg2.gs.nintendowifi.net",
+      "value": "94.130.8.215"
+   },
+   {
+      "type": "a",
+      "name": "natneg3.gs.nintendowifi.net",
+      "value": "94.130.48.222"
+   },
+   {
+      "type": "a",
+      "name": "natneg4.gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "natneg5.gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "natneg6.gs.nintendowifi.net",
+      "value": "95.217.77.151"
+   },
+   {
+      "type": "a",
+      "name": "rs.nintendo.com",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "ms.nintendo-europe.com",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "wiirecommend.nintendo.com.au",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "wii.nintendo.co.jp",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "gdata.youtube.com",
+      "value": "92.222.69.160"
+   },
+   {
+      "type": "a",
+      "name": "flipnote.hatena.com",
+      "value": "178.62.43.212"
+   },
+   {
+      "type": "a",
+      "name": "syscheck.softwii.de",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "syscheck.rc24.xyz",
+      "value": "164.132.44.106"
+   },
+   {
+      "type": "a",
+      "name": "ctgpr.chadsoft.co.uk",
+      "value": "86.1.35.134"
+   },
+   {
+      "type": "a",
+      "name": "ctgpr1.pokeacer.xyz",
+      "value": "195.201.236.139"
+   },
+   {
+      "type": "a",
+      "name": "ctgpr2.pokeacer.xyz",
+      "value": "185.216.27.189"
+   },
+   {
+      "type": "a",
+      "name": "ctgpr3.pokeacer.xyz",
+      "value": "164.132.44.106"
    }
 ]
