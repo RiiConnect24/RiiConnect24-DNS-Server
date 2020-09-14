@@ -1,6 +1,6 @@
 ! Title: RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole
 ! Version: 2020-September-14
-! Verified DNS lookup from RiiConnect24 DNS server 164.132.44.106
+! Converted from https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones.json
 164.132.44.106 cfh.wapp.wii.com
 164.132.44.106 ente.wapp.wii.com
 164.132.44.106 entj.wapp.wii.com
@@ -12,13 +12,18 @@
 164.132.44.106 vt.wapp.wii.com
 164.132.44.106 wus.wapp.wii.com
 164.132.44.106 weather.wapp.wii.com
+164.132.44.106 wc24.wii.com
 95.217.77.151 gamespy.com
 95.217.77.151 mariokartds.available.gs.nintendowifi.net
 95.217.77.151 gpcm.gs.nintendowifi.net
 178.62.43.212 nas.nintendowifi.net
 195.201.236.139 dls1.wiimmfi.de
+165.227.235.155 dls2.wiimmfi.de
 195.201.236.139 dls1.ilostmymind.xyz
+165.227.235.155 dls1.riiconnect24.net
+165.227.235.155 dls2.riiconnect24.net
 195.20.43.101 dls2.pokeacer.tk
+95.217.77.151 naswii.dev.wiimmfi.de
 195.201.236.139 peerchat.gs.nintendowifi.net
 191.236.98.208 pkgdsprod.nintendo.co.jp
 191.236.98.208 pkvldtprod.nintendo.co.jp
