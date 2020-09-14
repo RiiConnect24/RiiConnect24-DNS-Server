@@ -86,14 +86,29 @@
    },
    {
       "type": "a",
+      "name": "dls2.wiimmfi.de",
+      "value": "165.227.235.155"
+   },
+   {
+      "type": "a",
       "name": "dls1.ilostmymind.xyz",
       "value": "195.201.236.139"
    },
    {
       "type": "a",
+      "name": "dls1.riiconnect24.net",
+      "value": "165.227.235.155"
+   },
+   {
+      "type": "a",
+      "name": "dls2.riiconnect24.net",
+      "value": "165.227.235.155"
+   },
+   {
+      "type": "a",
       "name": "dls2.pokeacer.tk",
       "value": "195.20.43.101"
-   }
+   },
    {
       "type": "a",
       "name": "naswii.dev.wiimmfi.de",
