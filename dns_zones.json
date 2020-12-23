@@ -208,5 +208,10 @@
       "type":"a",
       "name":"syscheck.rc24.xyz",
       "value":"195.201.236.139"
+   },
+   {  
+      "type":"a",
+      "name":"asobids.ms9.gs.nintendowifi.net",
+      "value":"95.217.77.151"
    }
 ]
