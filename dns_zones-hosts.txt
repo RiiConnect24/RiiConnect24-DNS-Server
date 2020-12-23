@@ -1,5 +1,5 @@
 ! Title: RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole
-! Version: 15November2019v1.0.1Beta
+! Version: 23December2020v1Beta
 ! Expires: 20 days
 164.132.44.106 cfh.wapp.wii.com
 164.132.44.106 ente.wapp.wii.com
@@ -17,20 +17,18 @@
 95.217.77.151 mariokartds.available.gs.nintendowifi.net
 95.217.77.151 gpcm.gs.nintendowifi.net
 178.62.43.212 nas.nintendowifi.net
-165.227.235.155 dls1.wiimmfi.de
-165.227.235.155 dls2.wiimmfi.de
-165.227.235.155 dls1.riiconnect24.net
-165.227.235.155 dls2.riiconnect24.net
-165.227.235.155 dls2.pokeacer.tk
+195.201.236.139 dls1.wiimmfi.de
+195.201.236.139 dls1.ilostmymind.xyz
 95.217.77.151 naswii.dev.wiimmfi.de
-165.227.235.155 peerchat.gs.nintendowifi.net
+195.201.236.139 peerchat.gs.nintendowifi.net
 191.236.98.208 pkgdsprod.nintendo.co.jp
 178.62.43.212 pkvldtprod.nintendo.co.jp
-165.227.235.155 gamestats.gs.nintendowifi.net
-165.227.235.155 gamestats2.gs.nintendowifi.net
+195.201.236.139 gamestats.gs.nintendowifi.net
+195.201.236.139 gamestats2.gs.nintendowifi.net
 69.25.139.140 conntest.nintendowifi.net
 95.217.77.151 gs.nintendowifi.net
 164.132.44.106 mariokartwii.race.gs.wiimmfi.de
+95.217.77.151 master.gs.nintendowifi.net
 95.217.77.151 natneg1.gs.nintendowifi.net
 94.130.8.215 natneg2.gs.nintendowifi.net
 94.130.48.222 natneg3.gs.nintendowifi.net
@@ -43,5 +41,6 @@
 164.132.44.106 wii.nintendo.co.jp
 92.222.69.160 gdata.youtube.com
 178.62.43.212 flipnote.hatena.com
-165.227.235.155 syscheck.softwii.de
-165.227.235.155 syscheck.rc24.xyz
+195.201.236.139 syscheck.softwii.de
+195.201.236.139 syscheck.rc24.xyz
+95.217.77.151 asobids.ms9.gs.nintendowifi.net
