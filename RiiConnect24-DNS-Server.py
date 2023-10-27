@@ -24,10 +24,7 @@ def get_platform():
         'darwin' : 'OS X',
         'win32' : 'Windows'
     }
-    if sys.platform not in platforms:
-        return sys.platform
-
-    return platforms[sys.platform]
+    return platforms.get(sys.platform, sys.platform)
 
 RIICONNECT24DNSSERVER_VERSION = "1.2"
 
@@ -49,7 +46,7 @@ MY_IP = get_ip()
 
 print("+===============================+")
 print("|    RiiConnect24 DNS Server    |")
-print("|          Version " + RIICONNECT24DNSSERVER_VERSION + "          |")
+print(f"|          Version {RIICONNECT24DNSSERVER_VERSION}          |")
 print("+===============================+\n")
 
 print("Hello! This server will allow you to connect to RiiConnect24 when your Internet Service Provider does not work with custom DNS.")
@@ -132,24 +129,21 @@ class Record:
         )
 
     def try_rr(self, q):
-        if q.qtype == QTYPE.ANY or q.qtype == self._rtype:
+        if q.qtype in [QTYPE.ANY, self._rtype]:
             return self.as_rr(q.qname)
 
     def as_rr(self, alt_rname):
         return RR(rname=self._rname or alt_rname, rtype=self._rtype, **self.kwargs)
 
     def sensible_ttl(self):
-        if self._rtype in (QTYPE.NS, QTYPE.SOA):
-            return 60 * 60 * 24
-        else:
-            return 300
+        return 60 * 60 * 24 if self._rtype in (QTYPE.NS, QTYPE.SOA) else 300
 
     @property
     def is_soa(self):
         return self._rtype == QTYPE.SOA
 
     def __str__(self):
-        return '{} {}'.format(QTYPE[self._rtype], self.kwargs)
+        return f'{QTYPE[self._rtype]} {self.kwargs}'
 
 
 ZONES = {}
