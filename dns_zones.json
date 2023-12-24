@@ -17,7 +17,7 @@
    {
       "type":"a",
       "name":"conntest.nintendowifi.net",
-      "value":"69.25.139.140"
+      "value":"198.62.122.140"
    },
    {
       "type":"a",
@@ -57,7 +57,7 @@
    {
       "type":"a",
       "name":"flipnote.hatena.com",
-      "value":"104.248.0.110"
+      "value":"178.62.43.212"
    },
    {
       "type":"a",
@@ -107,7 +107,7 @@
    {
       "type":"a",
       "name":"maintenance.hatena.ne.jp",
-      "value":"104.248.0.110"
+      "value":"178.62.43.212"
    },
    {
       "type":"a",
@@ -247,17 +247,17 @@
    {
       "type":"a",
       "name":"ts.sudomemo.net",
-      "value":"67.227.185.125"
+      "value":"67.227.189.141"
    },
    {
       "type":"a",
       "name":"ugo.hatena.ne.jp",
-      "value":"104.248.0.110"
+      "value":"178.62.43.212"
    },
    {
       "type":"a",
       "name":"ugomemo.hatena.ne.jp",
-      "value":"104.248.0.110"
+      "value":"178.62.43.212"
    },
    {
       "type":"a",
@@ -283,5 +283,25 @@
       "type":"a",
       "name":"wus.wapp.wii.com",
       "value":"167.86.108.126"
+   },
+   {
+      "type":"a",
+      "name":"wus.wapp.wii.com",
+      "value":"167.86.108.126"
+   },
+   {
+      "type":"a",
+      "name":"sonicrushads.available.gs.nintendowifi.net",
+      "value":"95.217.77.151"
+   },
+   {
+      "type":"a",
+      "name":"sonicrushads.master.gs.nintendowifi.net",
+      "value":"95.217.77.151"
+   },
+   {
+      "type":"a",
+      "name":"sonicrushads.ms18.gs.nintendowifi.net",
+      "value":"95.217.77.151"
    }
 ]
