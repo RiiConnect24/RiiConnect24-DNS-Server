@@ -41,7 +41,6 @@
 ||peerchat.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;195.201.236.139
 ||pkgdsprod.nintendo.co.jp^$dnsrewrite=NOERROR;A;20.104.25.104
 ||pkvldtprod.nintendo.co.jp^$dnsrewrite=NOERROR;A;178.62.43.212
-||race.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
 ||rs.nintendo.com^$dnsrewrite=NOERROR;A;167.86.108.126
 ||sake.gamespy.com^$dnsrewrite=NOERROR;A;78.46.231.155
 ||sake.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
