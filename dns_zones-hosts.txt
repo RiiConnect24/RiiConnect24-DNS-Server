@@ -1,6 +1,6 @@
-178.62.43.212   flipnote.hatena.com
-178.62.43.212   maintenance.hatena.ne.jp
-178.62.43.212   nas.nintendowifi.net
+178.62.43.212 flipnote.hatena.com
+178.62.43.212 maintenance.hatena.ne.jp
+178.62.43.212 nas.nintendowifi.net
 165.227.235.155 nwdsrvwdbctl.nintendo.co.jp
 165.227.235.155 nzone001.nintendo-europe.com
 167.86.108.126 axing.nintendowifi.net
