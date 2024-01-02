@@ -1,7 +1,7 @@
 ||available.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
 ||axing.nintendowifi.net^$dnsrewrite=NOERROR;A;167.86.108.126
 ||cfh.wapp.wii.com^$dnsrewrite=NOERROR;A;167.86.108.126
-||conntest.nintendowifi.net^$dnsrewrite=NOERROR;A;69.25.139.140
+||conntest.nintendowifi.net^$dnsrewrite=NOERROR;A;198.62.122.140
 ||dls1.ilostmymind.xyz^$dnsrewrite=NOERROR;A;195.201.236.139
 ||ds.pokemon-gl.com^$dnsrewrite=NOERROR;A;178.62.43.212
 ||en-ds.pokemon-gl.com^$dnsrewrite=NOERROR;A;178.62.43.212
@@ -26,7 +26,7 @@
 ||miicontestp.wapp.wii.com^$dnsrewrite=NOERROR;A;167.86.108.126
 ||ms.nintendo-europe.com^$dnsrewrite=NOERROR;A;167.86.108.126
 ||nas.nintendowifi.net^$dnsrewrite=NOERROR;A;104.248.0.110
-||naswii.nintendowifi.net^$dnsrewrite=NOERROR;A;78.46.231.155
+||naswii.nintendowifi.net^$dnsrewrite=NOERROR;A;178.62.43.212
 ||natneg1.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;95.217.77.151
 ||natneg2.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;94.130.8.215
 ||natneg3.gs.nintendowifi.net^$dnsrewrite=NOERROR;A;94.130.48.222
